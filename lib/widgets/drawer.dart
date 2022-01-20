@@ -7,12 +7,14 @@ class MyDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Drawer(
       child: Container(
-              color: Colors.blue,
+              color: Colors.grey,
               child: ListView(
                 padding: const EdgeInsets.all(0),
           children: [
              DrawerHeader(
-               
+              decoration : const BoxDecoration(
+                color: Colors.grey,
+              ),  
                margin : const EdgeInsets.all(0),
                padding: const EdgeInsets.all(0),
                child: UserAccountsDrawerHeader(
@@ -36,13 +38,13 @@ class MyDrawer extends StatelessWidget {
                     color:Colors.white),
                     title:  Text("Mail", textScaleFactor:1.2 , style:TextStyle(color: Colors.white),),
                   ),
-                  const ListTile(
+                  const ListTile( 
                     leading :  Icon(
                     CupertinoIcons.profile_circled,
                     color:Colors.white),
                     title:  Text("Profile", textScaleFactor:1.2 , style:TextStyle(color: Colors.white),),
                   ),
-                  
+
                    ],
                 ),
                  
@@ -51,5 +53,3 @@ class MyDrawer extends StatelessWidget {
                  }
                }
                
-               class CircleAvtar {
-}
