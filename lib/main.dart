@@ -23,12 +23,13 @@ class MyApp extends StatelessWidget {
         fontFamily: GoogleFonts.lato().fontFamily,
 
       ),
-      initialRoute: "/",
+      initialRoute: MyRoute.homePage,
       routes: { 
         "/" : (context) => const LoginPage(),
         MyRoute.homePage : (context) =>  const HomePage(),
         MyRoute.loginPage : (context) => const LoginPage(),
       },
+        
     );
   }
 }
