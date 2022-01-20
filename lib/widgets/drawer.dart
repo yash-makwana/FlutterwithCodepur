@@ -6,6 +6,7 @@ class MyDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Drawer(
+      
       child: Container(
               color: Colors.grey,
               child: ListView(
@@ -18,7 +19,9 @@ class MyDrawer extends StatelessWidget {
                margin : const EdgeInsets.all(0),
                padding: const EdgeInsets.all(0),
                child: UserAccountsDrawerHeader(
-                 
+                    decoration : const BoxDecoration(
+                      color: Colors.grey,
+                    ),
                     accountName : const Text("Yash Makwana"),
                     accountEmail:const Text("yashmakwana40@gmail.com"),
                     currentAccountPicture : CircleAvatar(
